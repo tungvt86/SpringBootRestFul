@@ -25,6 +25,11 @@ import com.spring.boot.rest.ful.util.CustomErrorType;
 
 
 
+/**
+ * @author bear
+ * date 18/04/2018
+ *
+ */
 @RestController
 @RequestMapping("/api") ///
 public class RestApiController {
