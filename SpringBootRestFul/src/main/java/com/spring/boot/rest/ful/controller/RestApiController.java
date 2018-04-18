@@ -31,7 +31,7 @@ import com.spring.boot.rest.ful.util.CustomErrorType;
  *
  */
 @RestController
-@RequestMapping("/api") ///
+@RequestMapping("/api") ///Hanoi tinh yeu va noi nho
 public class RestApiController {
 
 	public static final Logger logger = LoggerFactory.getLogger(RestApiController.class);
