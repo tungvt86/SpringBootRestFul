@@ -48,6 +48,7 @@ public class RestApiController {//client push server
 		if (users.isEmpty()) {
 			return new ResponseEntity(HttpStatus.NO_CONTENT);
 			// You many decide to return HttpStatus.NOT_FOUND ha noi
+			logger.error("User with id {} not found.", id);
 		}
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
 	}
