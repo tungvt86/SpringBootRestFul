@@ -55,7 +55,7 @@ public class RestApiController {//client push server
 	
 	// -------------------Retrieve Single User------------------------------------------
 
-		@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+		/*@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
 		public ResponseEntity<?> getUser(@PathVariable("id") long id,
 				@RequestParam("salary") double salary, int age) {
 			logger.info("Fetching User with id {}", id);
@@ -66,7 +66,7 @@ public class RestApiController {//client push server
 						+ " not found"), HttpStatus.NOT_FOUND);
 			}
 			return new ResponseEntity<User>(user, HttpStatus.OK);
-		}
+		}*/
 
 		// -------------------Create a User-------------------------------------------
 
