@@ -42,7 +42,7 @@ public class RestApiController {//client push server
 
 	// -------------------Retrieve All Users---------------------------------------------
 
-	@RequestMapping(value = "/user/", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/user/", method = RequestMethod.GET)
 	public ResponseEntity<List<User>> listAllUsers() {
 		List<User> users = userService.findAllUsers();
 		if (users.isEmpty()) {
@@ -51,11 +51,11 @@ public class RestApiController {//client push server
 			logger.error("User with id {} not found.", id);
 		}
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
-	}
+	}*/
 	
 	// -------------------Retrieve Single User------------------------------------------
 
-		@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+		/*@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
 		public ResponseEntity<?> getUser(@PathVariable("id") long id,
 				@RequestParam("salary") double salary, int age) {
 			logger.info("Fetching User with id {}", id);
@@ -66,7 +66,7 @@ public class RestApiController {//client push server
 						+ " not found"), HttpStatus.NOT_FOUND);
 			}
 			return new ResponseEntity<User>(user, HttpStatus.OK);
-		}
+		}*/
 
 		// -------------------Create a User-------------------------------------------
 
