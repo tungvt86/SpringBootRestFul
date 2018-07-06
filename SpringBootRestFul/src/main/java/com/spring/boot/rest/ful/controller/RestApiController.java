@@ -126,11 +126,11 @@ public class RestApiController {//client push server
 
 		// ------------------- Delete All Users-----------------------------
 
-		@RequestMapping(value = "/user/", method = RequestMethod.DELETE)
+		/*@RequestMapping(value = "/user/", method = RequestMethod.DELETE)
 		public ResponseEntity<User> deleteAllUsers() {
 			logger.info("Deleting All Users");
 
 			userService.deleteAllUsers();
 			return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
-		}
+		}*/
 }
