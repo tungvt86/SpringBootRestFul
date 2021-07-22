@@ -42,19 +42,20 @@ public class RestApiController {//client push server
 
 	// -------------------Retrieve All Users---------------------------------------------
 
-	@RequestMapping(value = "/user/", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/user/", method = RequestMethod.GET)
 	public ResponseEntity<List<User>> listAllUsers() {
 		List<User> users = userService.findAllUsers();
 		if (users.isEmpty()) {
 			return new ResponseEntity(HttpStatus.NO_CONTENT);
+			// You many decide to return HttpStatus.NOT_FOUND ha noi
 			logger.error("User with id {} not found.", id);
 		}
 		return new ResponseEntity<List<User>>(users, HttpStatus.OK);
-	}
+	}*/
 	
 	// -------------------Retrieve Single User------------------------------------------
 
-		@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
+		/*@RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
 		public ResponseEntity<?> getUser(@PathVariable("id") long id,
 				@RequestParam("salary") double salary, int age) {
 			logger.info("Fetching User with id {}", id);
@@ -65,7 +66,7 @@ public class RestApiController {//client push server
 						+ " not found"), HttpStatus.NOT_FOUND);
 			}
 			return new ResponseEntity<User>(user, HttpStatus.OK);
-		}
+		}*/
 
 		// -------------------Create a User-------------------------------------------
 
@@ -125,11 +126,11 @@ public class RestApiController {//client push server
 
 		// ------------------- Delete All Users-----------------------------
 
-		@RequestMapping(value = "/user/", method = RequestMethod.DELETE)
+		/*@RequestMapping(value = "/user/", method = RequestMethod.DELETE)
 		public ResponseEntity<User> deleteAllUsers() {
 			logger.info("Deleting All Users");
 
 			userService.deleteAllUsers();
 			return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
-		}
+		}*/
 }
